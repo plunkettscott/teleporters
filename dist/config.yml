@@ -1,0 +1,22 @@
+colors:
+  blue:
+    r: 30
+    g: 144
+    b: 255
+    alpha: 0
+
+receivers:
+  test:
+    name: The Name
+    to:
+      x: "0"
+      y: "0"
+      z: "0"
+
+teleporter:
+  - goto: test
+    position:
+      x: "0"
+      y: "0"
+      z: "0"
+    color: red

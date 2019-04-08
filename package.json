@@ -1,0 +1,37 @@
+{
+  "name": "fxserver-teleporters",
+  "version": "0.0.1",
+  "description": "FX Server resource to allow teleportation from one point to another via markers.",
+  "repository": "git@github.com:plunkettscott/FXServer-Teleporters.git",
+  "author": "Scott Plunkett <plunkets@aeoss.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "fx:server": "webpack-cli --config config/server.js",
+    "fx:client": "webpack-cli --config config/client.js",
+    "fx:webapp": "webpack-cli --config config/app.js",
+    "fx:build": "yarn run fx:server & yarn run fx:client & yarn run fx:webapp"
+  },
+  "devDependencies": {
+    "@citizenfx/client": "^1.0.1159-1",
+    "@citizenfx/server": "^1.0.1159-1",
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@types/semver": "^5.5.0",
+    "@types/webpack-env": "^1.13.9",
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "ts-loader": "^5.3.3",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "~3.1.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  }
+}
